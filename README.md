@@ -24,11 +24,11 @@ Reddit Daily Programmer #150
 
 In this week's Easy challenge, series of words were disemvoweled into vowels, and non-vowel letters. Spaces were also removed. Your task today is, given the two strings produced via disemvowelment, output one possibility for the original string.
 
-    Your output must be such that if you put it through the solution to this week's Easy challenge, you'll recover exactly the input you were given.
-    You don't need to output the same string as the one that was originally disemvoweled, just some string that disemvowels to your input.
-    Use the Enable word list, or some other reasonable English word list. Every word in your output must appear in your word list.
-    For the sample inputs, all words in originally disemvoweled strings appear in Enable. In particular, I'm not using any words with punctuation, and I'm not using the word "a".
-    As before, ignore punctuation and capitalization.
+   * Your output must be such that if you put it through the solution to this week's Easy challenge, you'll recover exactly the input you were given.
+   * You don't need to output the same string as the one that was originally disemvoweled, just some string that disemvowels to your input.
+   * Use the Enable word list, or some other reasonable English word list. Every word in your output must appear in your word list.
+   * For the sample inputs, all words in originally disemvoweled strings appear in Enable. In particular, I'm not using any words with punctuation, and I'm not using the word "a".
+   * As before, ignore punctuation and capitalization.
 
 Input description
 
