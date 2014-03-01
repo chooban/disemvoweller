@@ -17,7 +17,7 @@ import com.rosshendry.reddit.disemvoweller.Pair;
 import com.rosshendry.reddit.disemvoweller.SimpleDisemvoweller;
 
 @RunWith(value = Parameterized.class)
-public class TestDisemvoweller {
+public class DisemvowellerTest {
 
 	@Parameter
 	public Disemvoweller disemvoweller;
