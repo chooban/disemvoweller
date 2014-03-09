@@ -1,8 +1,7 @@
 package com.rosshendry.reddit.reemvoweller;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
@@ -25,8 +24,6 @@ public class ReemvowellerTest {
 		reemvoweller = new Reemvoweller( words );
 		
 		List<String> results = reemvoweller.reemvowel( "wwllfndffthstrds", "eieoeaeoi", 1 );
-		
-		System.out.println( results.get( 0 ) );
 	}
 
 	private List<String> slurpEnableWords() {
@@ -37,7 +34,6 @@ public class ReemvowellerTest {
 			String complete = Charset.forName( "UTF-8" ).decode( ByteBuffer.wrap( encoded ) ).toString();
 			
 			words = Splitter.on( System.lineSeparator() ).splitToList( complete );
-			System.out.println( "Found " + words.size() + " words." );
 		} catch (IOException e) {
 			e.printStackTrace();
 			fail( "Could not read file" );
