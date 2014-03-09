@@ -71,10 +71,6 @@ public class SimpleTrie {
 	}
 
 	public void insert( String key ) {
-		if ( logger.isTraceEnabled() ) {
-			logger.trace( "Adding " + key );
-		}
-
 		TrieNode crawler = root;
 		for ( int level = 0; level < key.length(); level++ ) {
 			int index = key.charAt( level ) - A;
@@ -100,7 +96,7 @@ public class SimpleTrie {
 		return (crawler != null) && (crawler.valid == true);
 	}
 
-	public String[] possibleKeys( String key ) {
+	public List<String> possibleKeys( String key ) {
 		logger.debug( "Finding possible keys for " + key );
 		TrieNode crawler = findLastNodeForString( key );
 
@@ -115,7 +111,7 @@ public class SimpleTrie {
 				keys.add( String.valueOf( (char) (i + A) ) );
 			}
 		}
-		return keys.toArray( new String[] {});
+		return keys;
 	}
 
 	private TrieNode findLastNodeForString( String key ) {
